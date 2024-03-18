@@ -1,13 +1,4 @@
-/*
-Gramatica para el Robot:
-Autor: Alejandro Arango
-Modificado por: Silvia Takahashi
-Modificado por: Juan Pablo Morales.
-Agregadas producciones para manejar globos
-Modificado por Silvia Takahashi
-Final por Daniel Felipe Ortiz
 
- **/
 
 
 options 
@@ -622,7 +613,8 @@ void Condition(Console sistema, String esFuncion):
     { {if (esFuncion.isEmpty()) { salida = "\nNot "; code.add(new Instrucciones("not")); }
 	else {Funciones.get(esFuncion).add(new Instrucciones("not")); } } }
 	Condition(sistema, esFuncion)
-	  ) { sistema.printOutput(salida);}
+	
+  ) { sistema.printOutput(salida);}
 }
 
 // FUNCIONES VIEJAS
